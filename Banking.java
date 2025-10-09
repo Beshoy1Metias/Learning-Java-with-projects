@@ -22,7 +22,7 @@ public class Banking{
         switch(choice){
             case 1 -> showbalance(balance);
             case 2 -> balance += deposit(); 
-            case 3 -> balance -= withdraw();
+            case 3 -> balance -= withdraw(balance);
             case 4 -> isRunning=false;
             default -> System.out.print("Invalid choice");
             
@@ -52,13 +52,16 @@ public class Banking{
         return 0;
         
     }
-    static double withdraw(){
+    static double withdraw(double balance){
         System.out.println("Amount to be withdrawn: ");
         double withdrawn = scanner.nextDouble();
         if(withdrawn<0){
             System.out.println("Can't withdraw negative numbers!!");
             System.out.println("got it???");
 
+        }
+        else if(withdrawn > balance){
+            System.out.println("insufficient funds");
         }
         else{
             return withdrawn;
