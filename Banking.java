@@ -56,7 +56,8 @@ public class Banking{
         System.out.println("Amount to be withdrawn: ");
         double withdrawn = scanner.nextDouble();
         if(withdrawn<0){
-            System.out.println("Can't withdraw negative numbers!");
+            System.out.println("Can't withdraw negative numbers!!");
+            System.out.println("got it???");
 
         }
         else{
