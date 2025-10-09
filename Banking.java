@@ -23,7 +23,10 @@ public class Banking{
             case 1 -> showbalance(balance);
             case 2 -> balance += deposit(); 
             case 3 -> balance -= withdraw(balance);
-            case 4 -> isRunning=false;
+            case 4 -> {
+                isRunning=false;
+                System.out.println("Have a nice dayyyyy");
+            }
             default -> System.out.print("Invalid choice");
             
         }
