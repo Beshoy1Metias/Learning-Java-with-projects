@@ -1,7 +1,7 @@
 public class MyBinaryFormatNeg{
     public static void main(String[] args) {
         
-        int number  = -100;
+        int number  = -120;
         int decimal = number +128;
         
         String remainder = "";
