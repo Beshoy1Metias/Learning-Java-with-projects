@@ -36,7 +36,20 @@ public class MultipleLister2
 			System.exit(0);
 		}
 		String output = "";
-		for(int i=max; i>=p; i--){
+		int i = p+1;
+		while(i<=max)
+		{
+			if((i%p)==0)
+			{
+				output = output+ " "+i;
+			}
+			i++;
+		}
+		System.out.printf("Multiples of %d in the range [%d, %d]:%s", p, p, max, output);
+		
+		scanner.close();
+		/*
+				for(int i=max; i>=p; i--){
 			
 			if((i%p)==0){
 				
@@ -46,10 +59,7 @@ public class MultipleLister2
 			
 			
 		}
-		System.out.printf("Multiples of %d in the range [%d, %d]:%s", p, p, max, output);
 		
-		scanner.close();
-		/*
 		System.out.println("Write the MultipleLister2.java executable class that prints on standard output the multiples of the positive integer n included in the range [n, max], where max > n, in sequence from the largest to the smallest.");
 		
 		System.out.print("Enter n: ");
