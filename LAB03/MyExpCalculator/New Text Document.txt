@@ -1,0 +1,52 @@
+/*
+The Taylor's series expansion of the exponential function is shown below:
+
+that holds for 
+
+Write an executable class MyExpCalculator.java which:
+
+reads the x value from standard input
+computes the value of ex using the Taylor series
+prints on standard output the number of terms of the series used
+prints on standard output the value of ex computed through the series
+prints on standard output the value of ex computed using the Math.exp(x) method
+**/
+import java.util.Scanner;
+public class MyExpCalculator{
+	
+	public static void main(String[] args){
+		
+			Scanner in = new Scanner(System.in);
+			
+			System.out.println("*********************************************************");
+			System.out.println("* computes exp(x) funct. using Taylor series expansion  *");
+			System.out.println("* reads the  x value from standard input                *");
+			System.out.println("* print the result on standard output                   *");
+			System.out.println("*********************************************************");
+			System.out.print("Enter x: ");
+
+			double n = in.nextDouble();
+			double i = 2;
+			double term=1;
+			int counter=0;
+			double result=1.0;
+			while(Math.abs(term)> 1E-14){
+				term = term * (n/i);
+				result += term;
+				i++;
+				counter++;
+				
+			}
+			counter++;
+			double output = result+ n;
+			double maths = Math.pow(Math.E, n);
+			System.out.println(counter+ " terms of the series used");
+			System.out.printf("1. myExp(%.2f) = %.15f%n", n, output);
+			System.out.printf("1. Math.Exp(%.2f) = %.15f%n", n, maths );
+		
+		
+	}
+	
+	
+	
+}
