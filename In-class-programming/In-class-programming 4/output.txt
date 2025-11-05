@@ -1,0 +1,3 @@
+Standard deviation equals: 28.210173696735723
+Mean equals: 49.81
+Number of values: 100
