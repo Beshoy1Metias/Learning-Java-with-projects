@@ -20,6 +20,19 @@ public class StringRotator
 		String input = in.next();
 		System.out.print("insert the number of rotations: ");
 		int r = in.nextInt();
+		in.close();
+		int length = input.length();
+		while(Math.abs(r)>length){
+			r -= length;
+		}
+		while(r<0){
+			r += length;
+		}
+		String output = input.substring(length - r, length) + input.substring(0, (length-r));
+		System.out.println(output);
+		}}
+		
+		/**
 		char[] output = new char[input.length()];
 		char[] backup = new char[input.length()];
 		int length =input.length();
@@ -57,3 +70,5 @@ public class StringRotator
 	}
 	
 }
+
+*/
