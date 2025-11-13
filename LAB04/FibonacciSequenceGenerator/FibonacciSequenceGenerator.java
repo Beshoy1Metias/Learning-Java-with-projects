@@ -52,18 +52,24 @@ public class FibonacciSequenceGenerator
 		int first=1;
 		int second =1;
 		int res=0;
-		String output="";
-		while(count<=k){
-			if(k==0){
-				System.out.print("0 ")
+		System.out.print("Fibonacci sequence ");
+		while(count<k){
+			if(count<=1){
+				System.out.print(count+", ");
+				count++;
+				continue;
 				}
+			
 			res = first+second;
-			output = output+ ", " +res;
+			if(count!=k-1){
+				System.out.print(res+", ");
+			}
+			else{
+				System.out.print(res);}
 			first = second;
 			second = res;
 			
 			count++;
 		}
-		System.out.print("0, 1, 1"+output);
 	}
 }

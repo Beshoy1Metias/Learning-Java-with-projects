@@ -28,6 +28,14 @@ public class MyStatistics
 			if(x.equals("")){
 				break;
 			}
+			if(counter >= values.length)
+			{
+				int[] newV = new int[2* values.length];
+				for(int i = 0; i<values.length; i++){
+					newV[i]=values[i];
+				}
+				values = newV;
+			}
 			values[counter]=Integer.parseInt(x);
 			
 			sum += values[counter];		
