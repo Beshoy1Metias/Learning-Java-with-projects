@@ -7,10 +7,10 @@
  */
 public class MoneyAmount
 {
-    public double amount=0.0;
-    public String currency = "$";
-    public double rate = 0.0;
-    public MoneyAmount(double anAmount, String aCurrency, double aToEuroRate)
+    private double amount=0.0;
+    private char currency = '$';
+    private double rate = 0.0;
+    public MoneyAmount(double anAmount, char aCurrency, double aToEuroRate)
     {
         amount = anAmount;
         currency = aCurrency;
@@ -24,7 +24,7 @@ public class MoneyAmount
     {
         return amount * rate;
     }
-    public String getcurrency()
+    public char getcurrency()
     {
         return currency;
     }
@@ -32,7 +32,7 @@ public class MoneyAmount
         return rate;
     }
     public String toString(){
-        return " ";
+        return currency + " " + amount*rate;
     }
     
 }

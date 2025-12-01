@@ -1,0 +1,1 @@
+public class factorial{	public static void main(String[] args)	{		System.out.print(factorialByRecursion(4));			}		public static int factorialByRecursion(int n)	{		if(n==1)		{			return n;		}		int result = factorialByRecursion(n-1)*n;		return result;	}}

@@ -66,6 +66,7 @@ public class Padlock{
 			stateString = "Open";
 		}
 		else{stateString = "Closed";}
+		
 		return "Padlock is "+stateString+", combination is "+ key;
 	}
 	
