@@ -1,0 +1,11 @@
+*************************************************
+*                LIST OF STUDENTS               *
+*   one student per line: format name:roll_no   *
+*************************************************
+Ryan One:56799
+Barbara Two:56789
+Gerard Three:56993
+Hellen Four:56985
+Glory Five:57689
+Jane Six:56816
+John Seven:56971
