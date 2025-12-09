@@ -1,0 +1,3 @@
+horse dog cat
+frog cow elephant
+goat sheep leon
