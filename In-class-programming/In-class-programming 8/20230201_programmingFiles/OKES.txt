@@ -1,0 +1,8 @@
+TOARRAY: Stockholm Madrid Cairo Doha Teheran 
+TOSORTEDARRAY: Cairo Doha Madrid Stockholm Teheran 
+SEARCH = 
+   Paris is not found
+   Stockholm is at distance 0 from Stockholm
+   Cairo is at distance 2 from Stockholm
+   Doha is at distance 3 from Stockholm
+SIZE = 5
