@@ -65,7 +65,27 @@ public class S<T> implements Stack<T>
 		addFirst(item);
 	}
 	@Override
-	public int search(T x){return 0;}
+	public int search(T x)
+	{
+		int len = size();
+		int count =0;
+		int output=-1;
+		S<T> tmp = new S();
+		while(!isEmpty())
+		{
+			if(top().equals(x))
+			{
+				output=count;
+			}
+			tmp.push(pop());
+			count++;
+		}
+		while(!tmp.isEmpty())
+		{
+			push(tmp.pop());
+		}
+		return output;
+	}
 	@Override
 	public T pop() throws EmptyStackException
 	{
@@ -74,7 +94,7 @@ public class S<T> implements Stack<T>
 	@Override
 	public boolean isEmpty()
 	{
-		return head==tail;
+		return size()<=0;
 	}
 	@Override
 	public void makeEmpty()

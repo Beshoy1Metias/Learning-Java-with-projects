@@ -19,9 +19,19 @@ public class ES<T extends Comparable> extends S<T>
              this extended stack
 
    */
+   
    public ES(T[] a)
    {
-      // TODO
+      if(a.length<=0){return;}
+	  
+	  for(int i=0; i<a.length;i++)
+	  {
+		  push(a[i]);
+	  }
+   }
+   private ES()
+   {
+      super();
    }
 
    @Override
@@ -32,7 +42,7 @@ public class ES<T extends Comparable> extends S<T>
    */
    public int search(T x)
    {    
-      // TODO  
+        
       
       return 0;
    }
@@ -46,9 +56,21 @@ public class ES<T extends Comparable> extends S<T>
    */
    public Comparable[] toArray()
    {
-      // TODO
-
-      return null;
+      ES<T> TMP = new ES();
+	  int length = size();
+	  Comparable[] arr= new Comparable[length]; 
+	  int j=0;
+	  while(!isEmpty())
+	  {
+		  arr[j]= top();
+		  TMP.push(pop());
+		  j++;
+	  }
+	  while(!TMP.isEmpty())
+	  {
+		  push(TMP.pop());
+	  }
+      return arr;
    } 
    
    /**
@@ -59,8 +81,37 @@ public class ES<T extends Comparable> extends S<T>
    */
    public Comparable[] toSortedArray()
    {
-      // TODO
-      
-      return null;
+	  Comparable[] sorted = toArray();
+      sort(sorted);
+	  return sorted;
    }     
+	private void sort(Comparable[] a)
+	{
+		if(a.length<2){return;}
+		int mid = a.length/2;
+		Comparable[] left= new Comparable[mid];
+		Comparable[] right= new Comparable[a.length-mid];
+		System.arraycopy(a, 0, left, 0, left.length);
+		System.arraycopy(a, mid, right, 0, right.length);
+		sort(left);
+		sort(right);
+		merge(a, left, right);
+	}
+	private void merge(Comparable[] a, Comparable[] b, Comparable[] c)
+	{
+		int ia =0, ib=0, ic=0;
+		while(ib<b.length && ic<c.length)
+		{
+			if(b[ib].compareTo(c[ic])<0)
+			{
+				a[ia++]=b[ib++];
+			}
+			else
+			{
+				a[ia++]=c[ic++];
+			}
+		}
+		while(ib<b.length){a[ia++]=b[ib++];}
+		while(ic<c.length){a[ia++]=c[ic++];}
+	}
 }
