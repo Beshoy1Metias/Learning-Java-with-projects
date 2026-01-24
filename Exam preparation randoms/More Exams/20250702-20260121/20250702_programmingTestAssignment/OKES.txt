@@ -1,0 +1,5 @@
+TOARRAY1: Alice Bart Claire Diana Eric 
+SIZE1 : 5
+SIZE2 : 5
+TOARRAY2: Alice Bart Claire Diana Eric 
+CONTAINS: Stack contains Eric Stack does not contain EricDiana

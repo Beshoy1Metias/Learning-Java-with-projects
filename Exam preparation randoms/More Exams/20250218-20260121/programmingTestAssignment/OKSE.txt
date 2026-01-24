@@ -1,0 +1,9 @@
+SIZE S1/2: 4/4
+S1 UNSORTED ITEMS: Vietnam Russia China Japan 
+S2 UNSORTED ITEMS: Vietnam Thailand Laos Cambodia 
+S1 SORTED ITEMS: China Japan Russia Vietnam 
+S2 SORTED ITEMS: Cambodia Laos Thailand Vietnam 
+EQUALS: S1 DOES NOT EQUAL S2
+S1 EQUALS S2
+CONTAINS: Thailand KO - Laos KO - Vietnam OK - Cambodia KO - 
+S1 SIZE 4

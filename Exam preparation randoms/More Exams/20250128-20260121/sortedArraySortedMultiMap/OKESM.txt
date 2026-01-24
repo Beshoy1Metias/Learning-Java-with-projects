@@ -1,0 +1,11 @@
+SIZE 8
+KEYS: France Germany Germany Iran Iran Italy Italy Turkey 
+KEYSET: France Germany Iran Italy Turkey 
+FINDALL: 
+KEY France: Paris 
+KEY Germany: Berlin Munich 
+KEY Iran: Mashhad Teheran 
+KEY Italy: Milan Rome 
+KEY Turkey: Ankara 
+SIZE BEFORE REMOVING: 8
+SIZE AFTER REMOVING: 0

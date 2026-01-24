@@ -1,0 +1,4 @@
+SIZE 8
+SORTED KEYS: France Germany Germany Iran Iran Italy Italy Turkey 
+MAPPINGS: France/Paris Germany/Berlin Germany/Munich Iran/Teheran Iran/Mashhad Italy/Rome Italy/Milan Turkey/Ankara 
+SIZE 0

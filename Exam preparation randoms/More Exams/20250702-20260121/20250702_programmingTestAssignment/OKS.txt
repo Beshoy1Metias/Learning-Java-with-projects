@@ -1,0 +1,4 @@
+SIZE : 5
+CONTAINS: Stack contains Eric Stack does not contain EricDiana
+TOP&POP : Alice/Alice Bart/Bart Claire/Claire Diana/Diana Eric/Eric 
+SIZE : 0
