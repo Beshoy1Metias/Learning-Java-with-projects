@@ -1,0 +1,4 @@
+***size = 7
+***toArray = grape apple apple blackberry blackberry pear fig 
+***front + dequeue = grape/grape apple/apple apple/apple blackberry/blackberry blackberry/blackberry pear/pear fig/fig 
+***size = 0
